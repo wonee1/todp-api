@@ -1,0 +1,33 @@
+GET http://localhost:3000/tasks
+
+###
+
+GET http://localhost:3000/tasks?sort=oldest&count=3
+
+###
+
+GET http://localhost:3000/tasks/66751d596929c2e9f90ed10
+
+###
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title":"고양이 놀아주기",
+    "description":"캣휠"   
+}
+
+###
+
+PATCH http://localhost:3000/tasks/66751d596929c2e9f90ed105
+Content-Type: application/json
+
+{
+    "title":"1시간 운동",
+    "description": "열심히 운동하기"
+}
+
+###
+
+DELETE http://localhost:3000/tasks/66751d596929c2e9f90ed105
